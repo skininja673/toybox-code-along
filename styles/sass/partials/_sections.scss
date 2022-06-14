@@ -1,0 +1,40 @@
+//categories
+.categoryList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  //   backgroun colors
+  .itemOne {
+    background-color: $quinary;
+  }
+  .itemTwo {
+    background-color: $secondary;
+  }
+  .itemThree {
+    background-color: $tertiary;
+  }
+  .itemFour {
+    background-color: $quaternary;
+  }
+  //   list item styles
+  .items {
+    border-radius: 10%;
+    width: calc(45% - 50px);
+    margin: 50px 25px 25px;
+    padding: 40px;
+    text-align: center;
+    transition: 0.3s;
+
+    // img styles
+    img {
+      border-radius: 10%;
+      margin-bottom: 15px;
+    }
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+//let them play
