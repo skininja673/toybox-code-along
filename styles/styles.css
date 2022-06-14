@@ -422,6 +422,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 20px 0px;
 }
 .navBar input[type=checkbox] {
   opacity: 0;
@@ -437,12 +438,32 @@ section {
 .searchCart .bag {
   margin-right: 15px;
 }
+.searchCart .menuIcon {
+  background-color: transparent;
+  border: none;
+}
 .searchCart .bag {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
+.searchCart .counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.searchCart .counter p {
+  width: 24px;
+  height: 24px;
+  background-color: #084b6d;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+}
 
 .slideOutNav {
-  display: none;
+  background-color: #084b6d;
 }
