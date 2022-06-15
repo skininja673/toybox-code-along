@@ -14,3 +14,28 @@ header .wrapper {
 .textContainer {
   width: 48%;
 }
+
+//contact page header style
+.contactHeader {
+  border: 2px solid red;
+  background-color: $quaternary;
+  padding-top: 120px;
+}
+.contactHeader .wrapper {
+  flex-direction: column;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+// this code is for wavy thing
+.contactHeader::after {
+  content: "";
+  // border: 2px solid green;
+  width: 100%; //width of after
+  height: 150px; //height of after
+  background-image: url(../assets/wave.svg);
+  background-size: 100% 100%; //100% is width of background img, 100% height of image
+  background-color: $quaternary;
+  // background-color: blue;
+  display: inline-block;
+}
