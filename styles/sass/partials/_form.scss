@@ -1,0 +1,66 @@
+.contact form {
+  display: flex;
+  flex-direction: column;
+  margin: 90px auto;
+  max-width: 1000px; //we did this because on a larger screen, its getting very big, so we just constraint to not increase more than 1000px
+}
+
+input,
+textarea {
+  border: none;
+  font-family: $bodyFont;
+  color: #333; //this color is when user type with keyboard, that color
+  padding: 0 0 10px 5px;
+  //   border: 2px solid red;
+  margin-bottom: 40px;
+  &::placeholder {
+    font-size: 0.8rem;
+    color: $primary; //this color is placeholder color
+    opacity: 1;
+    line-height: 1.4;
+    text-transform: uppercase;
+  }
+  &:focus {
+    border-bottom: 1px solid $primary;
+    outline: none;
+  }
+}
+
+input {
+  border-bottom: 1px solid #eee;
+}
+
+select {
+  appearance: none;
+  border: 0;
+  font-family: $bodyFont;
+  color: $primary;
+  background-color: $solidWhite;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  font-size: 0.8rem;
+  border-bottom: 1px solid #eee;
+  background-image: url("../assets/caret-down-solid.svg");
+  background-repeat: no-repeat;
+  background-position: 95%;
+}
+
+option {
+  font-family: inherit;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+
+  label {
+    // border: 2px solid red;
+    font-size: 0.8rem;
+    margin-left: 10px;
+  }
+  //   input is checkbox
+  input {
+    accent-color: $primary;
+  }
+}
